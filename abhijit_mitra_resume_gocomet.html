@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhijit Mitra — Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-size: 10.5pt;
+    background: #fff;
+  }
+  .page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 36px 44px;
+  }
+  @page { margin: 32px 0 32px 0; }
+  @page :first { margin: 0 0 32px 0; }
+  @media print {
+    body { font-size: 10pt; margin: 0; }
+    .page { padding: 36px 44px; max-width: 100%; }
+  }
+
+  /* Header */
+  .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #1a1a1a; padding-bottom: 14px; }
+  .header h1 { font-size: 22pt; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+  .header .subtitle { font-size: 11pt; color: #444; font-weight: 500; margin-bottom: 8px; }
+  .contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 9.5pt;
+    color: #333;
+    flex-wrap: wrap;
+  }
+  .contact-row a { color: #333; text-decoration: none; }
+  .contact-row a:hover { text-decoration: underline; }
+  .contact-item { display: inline-flex; align-items: center; gap: 5px; }
+  .icon { width: 13px; height: 13px; vertical-align: middle; }
+
+  /* Sections */
+  .section { margin-bottom: 16px; }
+  .section-title {
+    font-size: 11pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #1a1a1a;
+    border-bottom: 1.5px solid #ccc;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+  }
+
+  /* Summary */
+  .summary { font-size: 10pt; color: #2a2a2a; line-height: 1.55; }
+
+  /* Experience */
+  .exp-entry { margin-bottom: 12px; }
+  .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+  .exp-title { font-weight: 700; font-size: 10.5pt; }
+  .exp-company { font-weight: 600; color: #333; }
+  .exp-date { font-size: 9.5pt; color: #555; white-space: nowrap; }
+  .exp-meta { font-size: 9.5pt; color: #555; margin-bottom: 4px; }
+  ul { padding-left: 18px; }
+  li { margin-bottom: 2px; font-size: 10pt; }
+  li::marker { color: #666; }
+
+  /* Skills */
+  .skills-grid { display: grid; grid-template-columns: 140px 1fr; gap: 4px 12px; font-size: 10pt; }
+  .skills-label { font-weight: 600; color: #333; }
+  .skills-value { color: #2a2a2a; }
+
+  /* Education */
+  .edu-entry { display: flex; justify-content: space-between; align-items: baseline; }
+  .edu-title { font-weight: 600; font-size: 10.5pt; }
+  .edu-date { font-size: 9.5pt; color: #555; }
+
+  .bold { font-weight: 600; }
+  .highlight { font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Abhijit Mitra</h1>
+    <div class="subtitle">Director of Engineering</div>
+    <div class="contact-row">
+      <span class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="#333"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+        +91-9706126127
+      </span>
+      <span class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="#333"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <a href="mailto:abhijitmitra.in@gmail.com">abhijitmitra.in@gmail.com</a>
+      </span>
+      <span class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="#333"><path d="M19 0H5a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5V5a5 5 0 00-5-5zM8 19H5V8h3v11zM6.5 6.73a1.77 1.77 0 110-3.54 1.77 1.77 0 010 3.54zM20 19h-3v-5.6c0-3.37-4-3.12-4 0V19h-3V8h3v1.77C14.4 7.74 20 7.55 20 12.76V19z"/></svg>
+        <a href="https://www.linkedin.com/in/abhijit-mitra-a238ab13b/">LinkedIn</a>
+      </span>
+      <span class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24" fill="#333"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+        Bengaluru, India
+      </span>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary">
+      Engineering leader with <span class="bold">10+ years</span> of experience building and scaling high-performance SaaS platforms, including <span class="bold">direct logistics and supply-chain platform experience</span> at Locus.sh.
+      <ul style="margin-top:6px; padding-left:16px;">
+        <li>At Locus.sh, engineered logistics systems scaling to <span class="highlight">300M–1B+ API requests/day</span> during peak sale events (Myntra EORS, Harbolnas), serving enterprises like <span class="bold">Myntra, BigBasket, Delhivery, Bukalapak, and Unilever</span>.</li>
+        <li>Drove product delivery from inception to <span class="highlight">$7M+ ARR</span>. Scaled engineering from <span class="highlight">0 to 35+ engineers</span>, architecting systems handling <span class="highlight">20M+ daily requests</span>.</li>
+        <li>Drove <span class="highlight">76% cloud cost reduction</span> ($288K → $70K/month) through Savings Plans, Reserved Instances, and architecture optimization.</li>
+        <li>Pioneered an <span class="bold">AI-powered agentic development pipeline</span> — integrating Jira, Confluence, and Figma to automate code generation, review, testing, and deployment — increasing dev velocity by <span class="highlight">80%+</span>.</li>
+        <li>Proven track record across successful startup journeys — <span class="bold">Tekion</span> (seed stage → <span class="highlight">$4B valuation</span>), <span class="bold">Spotnana</span> (early stage → <span class="highlight">$1.2B unicorn</span>), <span class="bold">Locus.sh</span> (<span class="highlight">acquired by IKEA/Ingka Group</span>), and <span class="bold">Parspec</span> (inception → <span class="highlight">$7M+ ARR</span>).</li>
+        <li>Deep expertise in distributed systems, API architecture, <span class="bold">security compliance (SOC 2)</span>, <span class="bold">customer security assessments</span>, and building ownership-driven engineering cultures.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+
+    <!-- Parspec - Director -->
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span><span class="exp-title">Director of Engineering</span> &middot; <span class="exp-company">Parspec</span></span>
+        <span class="exp-date">Jan 2025 – Present</span>
+      </div>
+      <div class="exp-meta">Bengaluru, India &middot; AI-powered product data platform for the building industry</div>
+      <ul>
+        <li>Led the end-to-end engineering journey, scaling the company from inception to <span class="highlight">$7M+ ARR</span> through strong product and technology execution.</li>
+        <li>Built and scaled the engineering organization from <span class="highlight">0 to 35+ engineers</span>, managing <span class="highlight">37 engineers, 4 Engineering Managers, and 1 Application Security Lead</span>, establishing robust systems across development, security, and QA.</li>
+        <li>Designed and operated highly scalable systems handling <span class="highlight">20M+ daily requests</span>, including CPU-intensive workloads — large-scale document processing, document generation, and complex data pipelines.</li>
+        <li>Successfully led <span class="highlight">SOC 2 Type I and Type II audits</span>, maintaining a compliance score <span class="highlight">above 95% year-round</span>. Set up MDM via <span class="bold">JumpCloud</span>, endpoint protection with <span class="bold">Bitdefender</span>, and launched a <span class="bold">Vulnerability Disclosure Program (VDP)</span> through <span class="bold">HackerOne</span>. Handled <span class="bold">customer security assessments</span> — fielding and responding to enterprise security questionnaires on engineering practices, architecture, and data handling.</li>
+        <li>Owned product engineering, security & compliance, QA, and operational excellence; partnered with executive leadership to align technology strategy with business OKRs.</li>
+        <li>Led <span class="bold">AWS cost optimization</span>, reducing monthly spend from <span class="highlight">$288K to $70K/month</span> — a <span class="highlight">76% reduction</span> through Savings Plans, Reserved Instances, and architecture redesign across ECS clusters and load balancers.</li>
+        <li>Executed a comprehensive <span class="bold">AWS resource tagging strategy</span> to achieve per-feature cost attribution — enabling <span class="highlight">COGS analysis</span>, per-product cost breakdowns, and environment-level cost visibility (dev, staging, production).</li>
+        <li>Built production observability with <span class="bold">CloudWatch</span>, security posture with <span class="bold">AWS Inspector</span> and <span class="bold">GuardDuty</span>, and <span class="bold">ECS Auto Scaling</span> to ensure uptime SLAs defined in MSAs. Owned <span class="bold">incident response</span> — led triage, root cause analysis, and resolution across production systems.</li>
+        <li>Architected and deployed an <span class="highlight">end-to-end AI-powered agentic development pipeline</span> using Claude, increasing developer velocity by <span class="highlight">80%+</span> — multi-agent orchestration with sub-agents for code generation, review, testing, and deployment; integrated with <span class="bold">Jira, Confluence</span> (requirement ingestion) and <span class="bold">Figma</span> (design-to-code) via MCP; automated code review fixes, test generation with self-healing loops, and staging deployment with smoke tests and rollback.</li>
+        <li>Built a strong <span class="bold">QA culture and testing discipline</span> — established unit, integration, and E2E testing practices; implemented test automation frameworks; defined quality gates for releases across the CI/CD pipeline.</li>
+        <li>Conducted <span class="highlight">200+ technical interviews in a single quarter</span> — highest in the organization — to rapidly scale the engineering team while maintaining a high hiring bar.</li>
+        <li>Fostered a culture of ownership and accountability; mentored engineers and developed future engineering leaders.</li>
+      </ul>
+    </div>
+
+    <!-- Parspec - Lead -->
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span><span class="exp-title">Lead Engineer</span> &middot; <span class="exp-company">Parspec</span></span>
+        <span class="exp-date">Apr 2022 – Jan 2025</span>
+      </div>
+      <ul>
+        <li>Managed a team of <span class="highlight">13 engineers</span>, including <span class="highlight">Staff engineers</span> driving execution across frontend and backend while building the initial product foundation and establishing scalable architecture patterns.</li>
+        <li>Owned high-impact projects end-to-end — concept to production — ensuring performance, reliability, and maintainability.</li>
+        <li>Built and optimized systems for high-throughput, CPU-intensive workloads: document processing, generation, and data pipeline orchestration.</li>
+        <li>Reduced <span class="bold">Alternate Product search engine</span> P90 latency for the top 500 manufacturers from <span class="highlight">10 seconds to under 2 seconds</span>, significantly improving user experience and conversion.</li>
+        <li>Reduced <span class="bold">Document search</span> P90 latency from <span class="highlight">8 seconds to 2 seconds</span>, improving responsiveness for core product workflows.</li>
+        <li>Architected and built a high-throughput <span class="bold">Inventory Management System</span> capable of ingesting and processing <span class="highlight">10M+ products in a single bulk upload</span>, enabling enterprise-scale catalog onboarding with zero downtime.</li>
+        <li>Introduced engineering best practices across code quality, testing, and deployment; mentored early team members and contributed to hiring.</li>
+      </ul>
+    </div>
+
+    <!-- Spotnana -->
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span><span class="exp-title">Founding Engineer</span> &middot; <span class="exp-company">Spotnana</span></span>
+        <span class="exp-date">Jul 2021 – Apr 2022</span>
+      </div>
+      <div class="exp-meta">Bengaluru, India &middot; Cloud-native B2B travel management platform</div>
+      <ul>
+        <li>Designed foundational backend systems powering end-to-end travel booking, management, and orchestration across <span class="bold">all travel verticals — Flight, Hotel, Rail, Car, and Limo</span>.</li>
+        <li>Built deep integrations with <span class="bold">Sabre GDS</span> for reservations, ticketing, and global travel workflows across multiple verticals.</li>
+        <li>Engineered robust, scalable APIs for complex travel data — itineraries, pricing, availability, and booking state transitions with strong consistency across distributed services.</li>
+      </ul>
+    </div>
+
+    <!-- Locus -->
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span><span class="exp-title">Senior Software Engineer</span> &middot; <span class="exp-company">Locus.sh</span></span>
+        <span class="exp-date">Jul 2020 – Jul 2021</span>
+      </div>
+      <div class="exp-meta">Bengaluru, India &middot; Enterprise logistics optimization platform</div>
+      <ul>
+        <li>Engineered distributed logistics systems serving enterprise customers — <span class="bold">Myntra, BigBasket, Licious, Delhivery, Bukalapak, Unilever</span> — processing <span class="highlight">1.5–2M deliveries/day at BAU</span>, scaling to <span class="highlight">5–8M deliveries/day</span> during peak sale events (Myntra EORS, Indonesia Harbolnas), generating <span class="highlight">hundreds of millions of API requests/day</span>.</li>
+        <li>Built and optimized compute-intensive <span class="bold">route optimization services</span> solving NP-hard problems with <span class="highlight">180+ variables per decision</span> — dispatch planning, dynamic scheduling, and real-time ETA recalculations — achieving <span class="highlight">10–20x improvement in trip efficiency</span> per vehicle.</li>
+        <li>Designed high-throughput backend systems handling <span class="highlight">peak bursts of 15,000–30,000+ RPS</span> across order ingestion, geocoding, real-time tracking, and driver dispatch — with route-optimization-heavy calls at <span class="highlight">1,000–2,000 RPS</span> driving the bulk of compute cost.</li>
+        <li>Built surge-resilient architecture using <span class="bold">queue-based decoupling, geospatial indexing, pre-computed route caching</span>, and <span class="bold">solver parallelization</span> to handle 3–4x traffic spikes during festive-season sales with zero downtime.</li>
+      </ul>
+    </div>
+
+    <!-- Earlier Experience -->
+    <div class="exp-entry">
+      <div class="section-title" style="font-size:10pt; margin-bottom:8px;">Earlier Experience</div>
+      <div class="exp-header">
+        <span><span class="exp-title">Senior Developer</span> &middot; <span class="exp-company">CoWrks</span></span>
+        <span class="exp-date">Jan 2019 – Jul 2020</span>
+      </div>
+      <div class="exp-meta">Bengaluru, India &middot; Premium coworking platform (acquired by Brookfield in $2B deal) &middot; 44 centers across 8 cities</div>
+      <ul>
+        <li>Built <span class="bold">Nucleus</span> (admin portal) and <span class="bold">Launchpad</span> (client platform) powering end-to-end coworking operations across <span class="highlight">44 centers in 8 cities</span> — member onboarding, KYC, digital contracts with e-sign, payments and billing, space booking, and community management.</li>
+        <li>Designed multi-tenant architecture supporting both individual members and enterprise clients with role-based access, automated invoicing, and real-time occupancy tracking across all centers.</li>
+        <li>Implemented production observability with <span class="bold">Graylog</span> and <span class="bold">Errbit</span>, enabling proactive issue detection and reducing mean time to resolution across the platform.</li>
+      </ul>
+      <div class="exp-header" style="margin-top:8px;">
+        <span><span class="exp-title">Founding Engineer</span> &middot; <span class="exp-company">Tekion Corp</span></span>
+        <span class="exp-date">Feb 2018 – Jan 2019</span>
+      </div>
+      <div class="exp-meta">Bengaluru, India &middot; Cloud-native Dealer Management System disrupting CDK/Reynolds duopoly &middot; Founded by former Tesla CIO</div>
+      <ul>
+        <li>Joined at <span class="bold">seed stage</span> as a founding engineer — Tekion has since grown to a <span class="highlight">$4B valuation</span>, serving <span class="highlight">800+ dealerships</span> across <span class="highlight">52 OEM brands</span> (GM, Ford, Honda).</li>
+        <li>Designed and built core product modules — <span class="bold">Scheduling, Vehicle Inspection, and Promotions</span> — for the industry's first cloud-native DMS, replacing 40-year-old legacy on-premise systems.</li>
+        <li>Established early architecture patterns and engineering standards for a microservices-based, AWS-hosted platform built to scale across the US automotive retail market.</li>
+      </ul>
+      <div class="exp-header" style="margin-top:8px;">
+        <span><span class="exp-title">Software Engineer</span> &middot; <span class="exp-company">HurixDigital</span></span>
+        <span class="exp-date">Feb 2016 – Feb 2018</span>
+      </div>
+      <div class="exp-meta">Mumbai, India &middot; AI-powered EdTech &amp; digital content platform &middot; Serving 15M+ users across 32 countries</div>
+      <ul>
+        <!-- <li>Built a full-featured e-learning player and a reusable <span class="bold">React-based e-learning shell</span> with dynamic module loading, state management, and performance optimization for media-rich educational content.</li> -->
+        <li>Developed interactive content delivery modules for global publishers including <span class="bold">McGraw Hill, Oxford University Press, and Pearson</span> — platform serves <span class="highlight">15M+ users</span> across <span class="highlight">32 countries</span> in <span class="highlight">25+ languages</span>.</li>
+        <li>Engineered cross-platform compatibility (web, iOS, Android) with DRM-enabled content delivery, ensuring secure distribution of copyrighted educational materials at scale.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <span class="skills-label">Languages</span>
+      <span class="skills-value">Python, JavaScript (ES6+), TypeScript, Go</span>
+      <span class="skills-label">Backend</span>
+      <span class="skills-value">Django, Node.js, Express.js, GraphQL, Distributed Systems, Microservices</span>
+      <span class="skills-label">AI / Agentic Dev</span>
+      <span class="skills-value">Claude Code, Multi-Agent Orchestration, Sub-Agent Architectures, MCP Integrations (Jira, Confluence, Figma), Hooks, Persistent Agent Memory, Agentic CI/CD Pipelines</span>
+      <span class="skills-label">Frontend</span>
+      <span class="skills-value">React, Redux, Next.js</span>
+      <span class="skills-label">Databases</span>
+      <span class="skills-value">PostgreSQL, MongoDB, Redis, Elasticsearch, DynamoDB</span>
+      <span class="skills-label">Messaging</span>
+      <span class="skills-value">AWS SQS, AWS SNS, AWS EventBridge, RabbitMQ, Kafka</span>
+      <span class="skills-label">Cloud & DevOps</span>
+      <span class="skills-value">AWS (ECS, CloudWatch, Inspector, GuardDuty, Auto Scaling, Load Balancers, Savings Plans, Cost Explorer), CI/CD Pipelines, Docker, Fluent Bit, Cost Optimization, Observability</span>
+      <span class="skills-label">Security</span>
+      <span class="skills-value">SOC 2 Type I & II, MDM (JumpCloud), Endpoint Protection (Bitdefender), VDP (HackerOne)</span>
+      <span class="skills-label">Leadership</span>
+      <span class="skills-value">Team Building (0→35+), OKR Management, Agile/Scrum, Technical Roadmapping, Hiring</span>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-entry">
+      <span class="edu-title"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Gauhati_University_Logo.jpeg/250px-Gauhati_University_Logo.jpeg" alt="Gauhati University" style="width:22px; height:22px; vertical-align:middle; margin-right:6px; border-radius:2px;">B.Tech — Gauhati University, Guwahati</span>
+      <span class="edu-date">2011 – 2015</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
