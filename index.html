@@ -57,7 +57,11 @@
       font-size: 18px;
       color: var(--text);
       letter-spacing: -0.3px;
+      text-decoration: none;
+      transition: opacity 0.2s;
     }
+
+    .nav-logo:hover { opacity: 0.75; }
 
     .nav-logo span { color: var(--accent); }
 
@@ -879,7 +883,7 @@
 
 <!-- ─── NAV ─────────────────────────────────────────────── -->
 <nav id="navbar">
-  <div class="nav-logo">AM<span>.</span></div>
+  <a href="#home" class="nav-logo">AM<span>.</span></a>
   <ul class="nav-links" id="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
